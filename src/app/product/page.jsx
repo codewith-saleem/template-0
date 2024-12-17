@@ -88,12 +88,12 @@ function ProductDisplay() {
             <h2 className='text-4xl font-semibold'>Asgaard Sofa</h2>
             <p className='text-xl opacity-60 font-medium'>Rs. 250, 000.00</p>
             <div className='flex gap-4'>
-              <div className='flex gap-2'>
-                <Star size={18} className='text-yellow-300' />
-                <Star size={18} className='text-yellow-300' />
-                <Star size={18} className='text-yellow-300' />
-                <Star size={18} className='text-yellow-300' />
-                <Star size={18} className='text-yellow-300' />
+              <div className="rating">
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-500" />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-500" />
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-500" />
+                <input type="radio" name="rating-2" className="rating-half mask mask-star-2 bg-yellow-500" defaultChecked/>
+                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-500" />
               </div>
               <div className="divider divider-primary"></div>
               <p className='text-sm opacity-60'>5 Customer Review</p>

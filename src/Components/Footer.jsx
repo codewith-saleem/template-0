@@ -5,10 +5,10 @@ import UnderlinedLink from './UnderlinedLink'
 export default function Footer() {
   return (
     <>
-      <footer className='mt-6 px-4 lg:mx-40 py-8 flex flex-col justify-evenly gap-4 border-t'>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-6 first:items-start items-start'>
+      <footer className='mt-20 px-4 lg:mx-40 py-8 flex flex-col justify-evenly gap-4 border-t'>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 first:items-start items-start'>
           <div className='flex flex-col gap-1 opacity-60'>
-            <p>Sudais</p>
+            <p>Shahmir Qureshi</p>
             <p>Web Developer</p>
             <p>Roll Num.</p>
           </div>
@@ -26,10 +26,10 @@ export default function Footer() {
             <Link href={"#"} className='link link-hover'>Privacy Policy</Link>
             <Link href={"#"} className='link link-hover'>Contact</Link>
           </div>
-          <div className='flex flex-col items-start h-full'>
+          <div className='md:col-span-3 lg:col-span-1 flex flex-col items-start h-full'>
             <h4 className='opacity-60 mb-6'>Newsletter</h4>
-            <div className='flex gap-3 items-end'>
-              <input type="email" placeholder='Enter your Email Address' className='input input-bordered underline underline-offset-8' />
+            <div className='flex flex-col md:flex-row items-center gap-3 md:items-end'>
+              <textarea type="email" placeholder='Enter your Email Address' className='border-b border-black ring-offset-violet-400'></textarea>
               <UnderlinedLink text={"SUBSCRIBE"} link={"#"} style={"text-sm"} />
             </div>
           </div>

@@ -1,3 +1,4 @@
+'use client'
 import { Search } from 'lucide-react'
 import { Heart } from 'lucide-react'
 import { ShoppingCart } from 'lucide-react'
@@ -5,12 +6,15 @@ import { User } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import CartMenu from './CartMenu'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <>
       <section id='header-wrapper' className=''>
-        <header className='p-4 lg:px-32 py-4 grid grid-cols-1 md:grid-cols-3 justify-center items-center'>
+        <header className={`p-4 lg:px-32 py-4 grid grid-cols-1 md:grid-cols-3 justify-center items-center ${pathname === "/" ? "bg-yellow-100" : "bg-transparent"}`}>
           <div className='flex justify-center lg:justify-start'>
             <Link href={"/"}>
             <img className='w-12 aspect-square' src="/logo.png" alt="brand logo" />

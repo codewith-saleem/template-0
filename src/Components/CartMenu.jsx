@@ -16,12 +16,12 @@ export default function CartMenu() {
         <ShoppingCart />
       </button>
 
-      <div
+      {/* <div
         id="cart-menu"
         className={` ${isOpen ? "block" : "hidden"} absolute top-0 right-0 h-screen w-full bg-black/5`}
       >
         <div className=""></div>
-      </div>
+      </div> */}
     </>
   )
 }
